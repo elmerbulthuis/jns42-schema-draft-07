@@ -1,6 +1,7 @@
 ifndef PACKAGE_NAME
-override PACKAGE_NAME:=$(basename $(PWD))
+override PACKAGE_NAME:=$(notdir $(basename $(PWD)))
 endif
+
 
 ifndef TAG
 override TAG:=v0.0.0
